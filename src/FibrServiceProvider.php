@@ -2,15 +2,15 @@
 
 namespace BeachcomberDigital\Fibr;
 
+use BeachcomberDigital\Fibr\Commands\FibrCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BeachcomberDigital\Fibr\Commands\FibrCommand;
 
 class FibrServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        dd("FibrServiceProvider configured");
+        dd('FibrServiceProvider configured');
         /*
          * This class is a Package Service Provider
          *
