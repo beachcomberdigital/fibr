@@ -1,25 +1,26 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace BeachcomberDigital\Fibr;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use BeachcomberDigital\Fibr\Commands\FibrCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class FibrServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
+        dd("FibrServiceProvider configured");
         /*
          * This class is a Package Service Provider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('fibr')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_fibr_table')
+            ->hasCommand(FibrCommand::class);
     }
 }
