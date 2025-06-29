@@ -17,10 +17,9 @@ class FibrServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('fibr')
-            ->hasConfigFile()
-            // ->hasViews()
-            // ->hasMigration('create_fibr_table')
-            // ->hasCommand(FibrCommand::class)
-        ;
+            ->hasConfigFile();
+        // ->hasViews()
+        // ->hasMigration('create_fibr_table')
+        // ->hasCommand(FibrCommand::class)
     }
 }
