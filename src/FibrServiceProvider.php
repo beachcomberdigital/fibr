@@ -10,7 +10,6 @@ class FibrServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        dd("FibrServiceProvider configured");
         /*
          * This class is a Package Service Provider
          *
@@ -19,8 +18,8 @@ class FibrServiceProvider extends PackageServiceProvider
         $package
             ->name('fibr')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_fibr_table')
-            ->hasCommand(FibrCommand::class);
+            // ->hasViews()
+            // ->hasMigration('create_fibr_table')
+            // ->hasCommand(FibrCommand::class);
     }
 }
