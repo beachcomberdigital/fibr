@@ -2,9 +2,9 @@
 
 namespace BeachcomberDigital\Fibr;
 
+use BeachcomberDigital\Fibr\Commands\FibrCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BeachcomberDigital\Fibr\Commands\FibrCommand;
 
 class FibrServiceProvider extends PackageServiceProvider
 {

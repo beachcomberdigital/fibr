@@ -2,9 +2,9 @@
 
 namespace BeachcomberDigital\Fibr\Tests;
 
+use BeachcomberDigital\Fibr\FibrServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use BeachcomberDigital\Fibr\FibrServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn(string $modelName) => 'BeachcomberDigital\\Fibr\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'BeachcomberDigital\\Fibr\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
